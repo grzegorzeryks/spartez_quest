@@ -51,7 +51,7 @@ header {
   .main-nav--active {
     color: black;
     padding-bottom: 10px;
-    border-bottom: 2px solid rgb(45, 156, 219);
+    border-bottom: 2px solid $color-blue;
   }
 }
 
@@ -83,11 +83,12 @@ header {
   }
   .latest-container-stars{
     margin: 0 0 0 12px;
-    p{
-      
+    a{
+      display: inline-block;
+      transform: translateY(-6px);
     }
     img{
-      width:30px;
+      width:26px;
       margin: 0;
     }
   }
@@ -109,9 +110,7 @@ header {
   .item {
     background-size: 456%;
     box-shadow: inset -6px -58px 44px -13px rgba(0, 0, 0, 0.8);
-    // &:hover{
-    //     box-shadow: inset -6px -58px 44px -13px rgba(0, 0, 0, 0.8);
-    // }
+
   }
 
   .first {
@@ -140,9 +139,30 @@ header {
   }
 
   h3 {
-    // font-weight: 400;
-    margin: 29px 0 0 12px;
+    margin: 15px 0 0 12px;
   }
+.item-buttons{
+  margin: 10px 0 0 12px;
+  a {
+    width: 110px;
+    padding: 5px;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 3px;
+    color: white;
+    text-align: center;
+  }
+  .btn-free{
+        background: $color-blue;
+  }
+  .btn-free-active{
+    background: $color-btn-active;
+  }
+  .btn-screenshots{
+    background: $menu-basic;
+    margin-left:5px;
+  }
+}
 }
 @media all and (max-width: 1158px) {
   .page-content {
