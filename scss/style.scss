@@ -63,6 +63,10 @@ header {
   h2 {
     font-weight: 400;
   }
+
+  .btn {
+    transition: background 0.2s;
+  }
 }
 
 .latest {
@@ -74,17 +78,18 @@ header {
   display: flex;
   flex-wrap: wrap;
 
-  .item {
+  .item {}
 
-  }
-  .latest-container-stars{
+  .latest-container-stars {
     margin: 0 0 0 12px;
-    a{
+
+    a {
       display: inline-block;
       transform: translateY(-6px);
     }
-    img{
-      width:26px;
+
+    img {
+      width: 26px;
       margin: 0;
     }
   }
@@ -105,8 +110,7 @@ header {
 
   .item {
     background-size: 456%;
-    box-shadow: inset -6px -58px 44px -13px rgba(0, 0, 0, 0.8);
-
+    box-shadow: inset -6px -119px 114px -57px rgba(0, 0, 0, 0.8);
   }
 
   .first {
@@ -118,11 +122,32 @@ header {
     background-image: url("../img/photo1.jpg");
     background-position: 93% 80%;
   }
-  .blogpost-items{
+
+  .blogpost-items {
     margin: 0;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+
+    h3 {
+      margin: 180px 0 10px 12px;
+      font-weight: 400;
+      color: white;
+    }
+
+    .blogpost-btn {
+      text-decoration: none;
+      color: black;
+      padding: 5px 8px;
+      background: $color-blogpost-btn;
+      border-radius: 2px;
+      text-align: center;
+      margin: 0 0 0 12px;
+
+      &:hover {
+        background: $color-blogpost-btn-lt;
+      }
+    }
   }
 }
 
@@ -143,28 +168,45 @@ header {
   h3 {
     margin: 15px 0 0 12px;
   }
-.item-buttons{
-  margin: 15px 0 0 12px;
-  a {
-    width: 110px;
-    padding: 5px;
-    text-decoration: none;
-    display: inline-block;
-    border-radius: 3px;
-    color: white;
-    text-align: center;
+
+  .item-buttons {
+    margin: 15px 0 0 12px;
+
+    a {
+      width: 110px;
+      padding: 5px;
+      text-decoration: none;
+      display: inline-block;
+      border-radius: 3px;
+      color: white;
+      text-align: center;
+    }
+
+    .btn-free {
+      background: $color-blue;
+
+      &:hover {
+        background: $color-blue-lighter;
+      }
+    }
+
+    .btn-free-active {
+      background: $color-btn-active;
+
+      &:hover {
+        background: $color-btn-active-lt;
+      }
+    }
+
+    .btn-screenshots {
+      background: $menu-basic;
+      margin-left: 5px;
+
+      &:hover {
+        background: $menu-basic-lighter;
+      }
+    }
   }
-  .btn-free{
-        background: $color-blue;
-  }
-  .btn-free-active{
-    background: $color-btn-active;
-  }
-  .btn-screenshots{
-    background: $menu-basic;
-    margin-left:5px;
-  }
-}
 }
 @media all and (max-width: 1158px) {
   .page-content {
@@ -177,23 +219,18 @@ header {
   }
 
   .blogpost {
-    margin: 25px 0 0 0;
+    margin: 25px 0 0;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    .blogpost-items{
-          flex-direction: row;
 
-          justify-content: space-around;
+    .blogpost-items {
+      flex-direction: row;
+      align-self: flex-start;
     }
+
     div {
       margin: 25px 25px 0 0;
     }
   }
 }
-
-@media all and (max-width: 411px) {
-  .page-content {
-    flex-direction: column;
-    // width: 100%;
-  }}
