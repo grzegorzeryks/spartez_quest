@@ -16,7 +16,7 @@
 
 body {
   font-family: 'Roboto', sans-serif;
-  background-color: $color-bg;
+  background-color: white;
 }
 
 header {
@@ -110,7 +110,7 @@ header {
 
   .item {
     background-size: 456%;
-    box-shadow: inset -6px -119px 114px -57px rgba(0, 0, 0, 0.8);
+    box-shadow: inset -6px -119px 114px -57px $color-black-opacity;
   }
 
   .first {
