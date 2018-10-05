@@ -16,7 +16,7 @@
 
 body {
   font-family: 'Roboto', sans-serif;
-  background-color: white;
+  background-color: $color-background;
 }
 
 header {
@@ -132,7 +132,7 @@ header {
     h3 {
       margin: 180px 0 10px 12px;
       font-weight: 400;
-      color: white;
+      color: $color-font-white;
     }
 
     .blogpost-btn {
@@ -178,7 +178,7 @@ header {
       text-decoration: none;
       display: inline-block;
       border-radius: 3px;
-      color: white;
+      color: $color-font-white;
       text-align: center;
     }
 
